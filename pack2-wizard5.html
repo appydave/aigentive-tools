@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContentFlow Creator – Step 4</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function useThesePosts() {
+      alert("Posts accepted. Proceeding to Step 5...");
+    }
+
+    function requestRewrite() {
+      alert("Requesting a revised set of posts...");
+    }
+  </script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center px-4">
+  <div class="max-w-5xl w-full bg-white p-8 rounded-2xl shadow-lg">
+
+    <h1 class="text-2xl font-bold text-gray-800 mb-4">Your Weekly Content Plan</h1>
+    <p class="text-gray-600 mb-6">Here is a draft of your weekly post schedule. Each week includes four post types designed to inform, engage, and convert. Review and adjust as needed.</p>
+
+    <div class="overflow-x-auto mb-6">
+      <table class="min-w-full text-left text-sm text-gray-700 border border-gray-200 rounded-xl">
+        <thead class="bg-gray-100 text-gray-800">
+          <tr>
+            <th class="p-3 font-semibold">Post ID</th>
+            <th class="p-3 font-semibold">Date</th>
+            <th class="p-3 font-semibold">Platform</th>
+            <th class="p-3 font-semibold">Copy</th>
+            <th class="p-3 font-semibold">Hashtags</th>
+            <th class="p-3 font-semibold">Source Link</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white">
+          <tr class="border-t">
+            <td class="p-3">001</td>
+            <td class="p-3">2025-05-01</td>
+            <td class="p-3">Instagram</td>
+            <td class="p-3">"Kick off May with a boost of motivation. Here's how creators are using micro-content..."</td>
+            <td class="p-3">#ContentTips #MicroContent</td>
+            <td class="p-3"><a href="#" class="text-blue-500 underline">View</a></td>
+          </tr>
+          <!-- Additional rows would be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="flex items-center justify-between">
+      <button onclick="requestRewrite()" class="text-sm text-gray-600 hover:underline">Ask for Rewrites</button>
+      <button onclick="useThesePosts()" class="bg-orange-500 text-white font-semibold py-2 px-6 rounded-xl hover:bg-orange-600 transition">Use These Posts</button>
+    </div>
+
+    <p class="text-sm text-gray-400 mt-6 text-center">Step 4 of 6</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select a Blog Topic</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center">
+  <div class="max-w-3xl w-full bg-white p-8 rounded-2xl shadow-lg">
+    <h1 class="text-2xl font-bold text-gray-800 mb-2">What Should We Write About?</h1>
+    <p class="text-gray-600 mb-6">Here are some tailored blog ideas for your brand. Choose the one you’d like to explore further.</p>
+
+    <form class="space-y-4">
+      <fieldset id="topic_options" class="space-y-4">
+        <!-- Repeat this block dynamically for each topic -->
+        <label class="block border border-gray-200 rounded-xl p-4 cursor-pointer hover:border-indigo-400">
+          <input type="radio" name="selected_topic" value="Topic 1" class="mr-2">
+          <span class="text-gray-800 font-medium">How AI is Revolutionizing Small Business Marketing</span>
+          <p class="text-sm text-gray-500 mt-1">Explore how small businesses can use AI tools to compete with large enterprises.</p>
+        </label>
+        <label class="block border border-gray-200 rounded-xl p-4 cursor-pointer hover:border-indigo-400">
+          <input type="radio" name="selected_topic" value="Topic 2" class="mr-2">
+          <span class="text-gray-800 font-medium">Top 5 SEO Trends to Watch in 2025</span>
+          <p class="text-sm text-gray-500 mt-1">Stay ahead of the curve with this actionable SEO roadmap.</p>
+        </label>
+        <!-- End repeated block -->
+      </fieldset>
+
+      <div class="flex items-center justify-between pt-6">
+        <button type="button" class="text-sm text-indigo-500 hover:underline">Regenerate Ideas</button>
+        <button type="submit" class="bg-indigo-600 text-white font-semibold py-2 px-6 rounded-xl hover:bg-indigo-700 transition">Use this Topic</button>
+      </div>
+    </form>
+
+    <p class="text-sm text-gray-400 mt-6 text-center">Step 2 of 7</p>
+  </div>
+</body>
+</html>

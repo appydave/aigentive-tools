@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Blog Generation</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function acceptBlog() {
+      alert("Blog post approved. Proceeding to Step 6...");
+    }
+
+    function askForRewrite() {
+      alert("Requesting blog rewrite...");
+    }
+  </script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center px-4">
+  <div class="max-w-4xl w-full bg-white p-8 rounded-2xl shadow-lg">
+
+    <h1 class="text-2xl font-bold text-gray-800 mb-4">Review Your Blog Post</h1>
+    <p class="text-gray-600 mb-6">Here is your draft blog post based on the research highlights. You can approve it or request a rewrite.</p>
+
+    <div class="prose prose-indigo max-w-none mb-6 bg-gray-100 p-6 rounded-xl overflow-y-auto max-h-[400px]">
+      <p><strong>Summary:</strong> AI tools are transforming small business marketing by automating content, targeting better, and increasing efficiency.</p>
+      <p>In today’s competitive digital environment, small businesses are increasingly turning to artificial intelligence to compete with larger companies. AI tools not only automate repetitive marketing tasks but also enhance personalization and customer engagement.</p>
+      <p>Predictive analytics help businesses optimize the timing of posts, and AI-powered chatbots improve customer service responsiveness. With tools like ChatGPT, content creation becomes faster and more cost-effective. Furthermore, ethical use of AI is growing as a consideration in the digital marketing space.</p>
+      <p><strong>Key Takeaways:</strong></p>
+      <ul>
+        <li>AI automates repetitive marketing work</li>
+        <li>Predictive tools enhance timing and effectiveness</li>
+        <li>Content personalization increases audience engagement</li>
+        <li>Chatbots improve support and availability</li>
+        <li>Ethical AI is increasingly important for brand trust</li>
+      </ul>
+    </div>
+
+    <div class="flex items-center justify-between">
+      <button onclick="askForRewrite()" class="text-sm text-indigo-500 hover:underline">Ask for Rewrite</button>
+      <button onclick="acceptBlog()" class="bg-indigo-600 text-white font-semibold py-2 px-6 rounded-xl hover:bg-indigo-700 transition">Looks Good</button>
+    </div>
+
+    <p class="text-sm text-gray-400 mt-6 text-center">Step 5 of 7</p>
+  </div>
+</body>
+</html>

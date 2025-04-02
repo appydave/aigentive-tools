@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContentFlow Creator – Step 5</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function useThisImage() {
+      alert("Image selected. Proceeding to final step...");
+    }
+
+    function tryAnotherImage() {
+      alert("Fetching a new image suggestion...");
+    }
+  </script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center px-4">
+  <div class="max-w-2xl w-full bg-white p-8 rounded-2xl shadow-lg text-center">
+
+    <h1 class="text-2xl font-bold text-gray-800 mb-4">Suggested Image</h1>
+    <p class="text-gray-600 mb-6">Here’s an image to accompany your content. You can use it or try another suggestion.</p>
+
+    <div class="mb-6">
+      <img src="https://placehold.co/400x400/purple/white?text=AI+Generated+White+on+Purple" alt="Suggested Blog Image" class="rounded-xl shadow-md mx-auto">
+    </div>
+
+    <div class="flex items-center justify-between">
+      <button onclick="tryAnotherImage()" class="text-sm text-orange-600 hover:underline">Try Another</button>
+      <button onclick="useThisImage()" class="bg-orange-500 text-white font-semibold py-2 px-6 rounded-xl hover:bg-orange-600 transition">Use This Image</button>
+    </div>
+
+    <p class="text-sm text-gray-400 mt-6 text-center">Step 5 of 6</p>
+  </div>
+</body>
+</html>

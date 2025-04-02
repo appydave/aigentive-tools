@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extended Research</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function saveFAQs() {
+      alert("FAQs saved. Proceeding to Step 5...");
+    }
+  </script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center px-4">
+  <div class="max-w-3xl w-full bg-white p-8 rounded-2xl shadow-lg">
+
+    <h1 class="text-2xl font-bold text-gray-800 mb-2">Extended Research</h1>
+    <p class="text-gray-600 mb-6">Paste in 3–5 "People Also Asked" questions from Google related to your blog topic. This additional research will help enhance your article's relevance and SEO value.</p>
+
+    <form onsubmit="event.preventDefault(); saveFAQs();">
+      <label for="other_faqs" class="block text-sm font-medium text-gray-700 mb-1">Paste FAQs Below</label>
+      <textarea id="other_faqs" name="other_faqs" rows="6" placeholder="e.g., What are the benefits of AI in marketing?\nHow can small businesses use AI tools?..." class="block w-full rounded-xl border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mb-4"></textarea>
+
+      <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-3 px-6 rounded-xl hover:bg-indigo-700 transition">Save FAQs</button>
+    </form>
+
+    <p class="text-sm text-gray-400 mt-6 text-center">Step 4 of 7</p>
+  </div>
+</body>
+</html>

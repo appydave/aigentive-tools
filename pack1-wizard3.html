@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Highlights</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function acceptHighlights() {
+      alert("Highlights accepted. Proceeding to Step 4...");
+    }
+
+    function regenerateHighlights() {
+      alert("Regenerating research highlights...");
+    }
+  </script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center px-4">
+  <div class="max-w-3xl w-full bg-white p-8 rounded-2xl shadow-lg">
+
+    <h1 class="text-2xl font-bold text-gray-800 mb-2">Research Highlights</h1>
+    <p class="text-gray-600 mb-6">Here are 10 key points based on your selected topic. You can review and refine them before moving forward.</p>
+
+    <ul class="list-decimal list-inside space-y-2 mb-6 text-gray-700">
+      <li>AI tools help small businesses automate repetitive marketing tasks.</li>
+      <li>Content generated with AI can significantly reduce time-to-publish.</li>
+      <li>AI-driven insights allow better audience targeting through behavior analysis.</li>
+      <li>Predictive analytics can identify the best times to post content.</li>
+      <li>AI chatbots are enhancing customer engagement and retention.</li>
+      <li>AI-powered tools like ChatGPT are influencing content creation strategies.</li>
+      <li>Voice and image recognition are emerging trends in AI marketing tech.</li>
+      <li>Ethical AI use is becoming a core concern among digital marketers.</li>
+      <li>AI helps personalize content across email, social, and web channels.</li>
+      <li>More platforms are embedding AI natively to support creators.</li>
+    </ul>
+
+    <div class="flex items-center justify-between">
+      <button onclick="regenerateHighlights()" class="text-sm text-indigo-500 hover:underline">Regenerate Highlights</button>
+      <button onclick="acceptHighlights()" class="bg-indigo-600 text-white font-semibold py-2 px-6 rounded-xl hover:bg-indigo-700 transition">Use Highlights</button>
+    </div>
+
+    <p class="text-sm text-gray-400 mt-6 text-center">Step 3 of 7</p>
+  </div>
+</body>
+</html>
